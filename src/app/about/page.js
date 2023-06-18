@@ -2,7 +2,7 @@
 const About = () => {
     return (
         <div>
-            CDN
+            
         </div>
     );
 };

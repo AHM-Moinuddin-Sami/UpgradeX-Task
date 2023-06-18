@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 footer {
   background-image: url("https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUs.085fb7a2.png&w=1920&q=100");
+}
+
+.products{
+  background-image: url("https://zetapp.in/_next/static/media/decImg.ead9275f.svg");
 }

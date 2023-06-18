@@ -1,9 +1,12 @@
+import Banner from '@/Components/Banner/Banner';
+import Brands from '@/Components/Brands/Brands';
 import React from 'react';
 
 const HomePage = () => {
   return (
     <div>
-      <a href="@/app/About/About.jsx">asd</a>
+      <Banner></Banner>
+      <Brands></Brands>
     </div>
   );
 };
