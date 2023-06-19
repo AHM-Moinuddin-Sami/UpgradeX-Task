@@ -7,30 +7,36 @@ import Tilt from 'react-parallax-tilt';
 
 const Products = () => {
 
+    useEffect(() => {
+        AOS.init({
+            // Customize AOS options here (optional)
+        });
+    }, [])
+
     const products = [
         {
             title: "Credit Cards",
             description: "100% Contactless Application Process with Instant Approval From Top Banks.",
             image: "/CC.webp",
-            bg: "green"
+            bg: "bg-green-50"
         },
         {
             title: "Loans",
             description: "100% online process. Instant offers. Affordable Rate of Interest on loans.",
             image: "/Loan.webp",
-            bg: "yellow"
+            bg: "bg-yellow-50"
         },
         {
             title: "Buy Now Pay Later",
             description: "Short-term financing that allows consumers to make purchases and pay for them over time.",
             image: "/BNPL.webp",
-            bg: "red"
+            bg: "bg-red-50"
         },
         {
             title: "Saving Accounts",
             description: "ZET offers range of savings account that suits your personal needs for the banking.",
             image: "/AccountSave.webp",
-            bg: "orange"
+            bg: "bg-orange-50"
         },
     ]
 
@@ -69,7 +75,7 @@ const Products = () => {
                         tiltMaxAngleX={10}
                         tiltMaxAngleY={10}
                     >
-                        <div className={` p-8 flex items-center bg-${product.bg}-50 hover:bg-white rounded-xl productCard `}>
+                        <div data-aos='fade-up' className={` p-8 flex items-center ${product.bg} hover:bg-white rounded-xl productCard `}>
                             <Image
                                 alt=''
                                 width={500}
@@ -78,7 +84,7 @@ const Products = () => {
                                 className=' w-48 h-48 '
                             ></Image>
                             <div className='pl-6'>
-                                <h3>{product.title}</h3>
+                                <h3 className=' text-xl font-semibold '>{product.title}</h3>
                                 <p>{product.description}</p>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import Banner from '@/Components/Banner/Banner';
 import Brands from '@/Components/Brands/Brands';
 import Products from '@/Components/Products/Products';
+import ZetEffect from '@/Components/ZetEffect/ZetEffect';
 import React from 'react';
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Banner></Banner>
       <Brands></Brands>
       <Products></Products>
+      <ZetEffect></ZetEffect>
     </div>
   );
 };
