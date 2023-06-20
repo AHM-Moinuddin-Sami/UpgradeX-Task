@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
+import { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Brands = () => {
 
@@ -17,25 +19,37 @@ const Brands = () => {
     ]
 
     return (
-        <div className="">
-            <div className="text-center">
-                <h3>Top Brands on ZET</h3>
+        <div className="md:px-48">
+            <div className="text-center my-4 md:my-12">
+                <h3 className="text-2xl font-semibold">Top Brands on ZET</h3>
                 <p>We are trusted by best brands in the country</p>
             </div>
-            <Marquee
-                speed={200}
+            <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            autoplay
+            speed={3500}
+            loop={true}
+            modules={[Autoplay]}
             >
                 {
-                    images.map((image, index) => <Image
-                        key={index}
-                        alt=""
-                        width={200}
-                        height={200}
-                        src={image}
-                        className="w-[300px] h-auto border-xl border rounded-xl mr-5 px-10 py-2"
-                    ></Image>)
+                    images.map((image, index) =>
+                        <SwiperSlide
+                            key={index}
+                            
+                        >
+                            <Image
+
+                                alt=""
+                                width={200}
+                                height={200}
+                                src={image}
+                                className="w-[300px] h-auto border-xl border md:rounded-xl md:mr-5 md:px-10 md:my-2 md:py-2"
+                            ></Image>
+                        </SwiperSlide>
+                    )
                 }
-            </Marquee>
+            </Swiper>
 
         </div >
     );

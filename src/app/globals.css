@@ -19,6 +19,7 @@ main {
 
 footer {
   background-image: url("https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUs.085fb7a2.png&w=1920&q=100");
+  object-fit: cover;
 }
 
 .productCard img {
@@ -64,6 +65,12 @@ footer {
   background-color: rgb(10, 37, 64);
 }
 
+@media (max-width: 600px) {
+  .steps {
+    clip-path: polygon(0% 13%, 100% 0%, 100% 87%, 0% 100%);
+  }
+}
+
 .stepsTitle {
   clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
@@ -74,8 +81,3 @@ footer {
   height: 90vh;
   width: 100%;
 }
-
-/* .investorImg:hover {
- transition-timing-function: cubic-bezier(0.03, 0.98, 0.52, 0.99);
- transition-duration: 400ms;
-} */

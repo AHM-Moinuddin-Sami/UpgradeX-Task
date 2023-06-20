@@ -3,7 +3,7 @@ import Image from "next/image";
 const Growth = () => {
     return (
         <div className="pb-6">
-            <p className="mb-20 mt-16 text-center">How we evolved over the years</p>
+            <p className="mb-20 mt-16 text-center text-[40px] font-bold">How we evolved over the years</p>
             <Image
             alt=""
             height={500}
@@ -16,3 +16,4 @@ const Growth = () => {
 };
 
 export default Growth;
+

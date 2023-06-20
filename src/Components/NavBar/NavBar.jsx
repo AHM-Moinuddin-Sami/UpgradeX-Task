@@ -14,7 +14,7 @@ const NavBar = () => {
 
                 </Image>
             </div>
-            <div className="flex gap-8 text-lg items-center">
+            <div className="gap-8 md:flex hidden text-lg items-center">
                 <a href="/">Home</a>
                 <a href="/about">About Us</a>
                 <a href="">Partner With Us</a>

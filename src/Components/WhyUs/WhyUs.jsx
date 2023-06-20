@@ -46,7 +46,7 @@ const WhyUs = () => {
     }, [])
 
     return (
-        <div className='py-[4vw] relative flex px-48'>
+        <div className='py-[4vw] relative flex md:flex-row flex-col px-4 md:px-48'>
             <Image
                 alt=''
                 width={200}
@@ -54,7 +54,7 @@ const WhyUs = () => {
                 src={"/bgImg.webp"}
                 className='h-[75%] w-[15%] hidden bottom-0 md:block pl-[1.5vw] absolute z-[1]'
             ></Image>
-            <div className='whyus flex flex-col w-[374px] h-[374px] items-center my-12'>
+            <div className='flex flex-col md:w-[374px] md:h-[374px] items-center my-12'>
                 <h3 className='text-center font-semibold text-2xl'>
                     Why <span className='text-blue-600'>Choose Us</span>
                 </h3>
@@ -67,19 +67,19 @@ const WhyUs = () => {
                     className='mt-[3vw] h-full hidden md:block w-full z-[2]'
                 ></Image>
             </div>
-            <div className='grid md:grid-cols-3 py-[2vw] px-[3vw] w-fit gap-5'>
+            <div className='grid md:grid-cols-3  py-[2vw] px-[3vw] w-fit gap-5'>
                 {
                     items.map((item, i) =>
-                        <div key={i} className='w-fit px-8 py-5' data-aos='fade-up'>
+                        <div key={i} className='w-fit flex flex-col items-center md:block px-8 py-5' data-aos='fade-up'>
                             <Image
                                 alt=''
                                 width={500}
                                 height={500}
                                 src={item.image}
-                                className=' w-[6vw] '
+                                className=' w-[16vw] md:w-[6vw] '
                             ></Image>
-                            <h3 className='font-semibold text-xl '>{item.title}</h3>
-                            <p>{item.description}</p>
+                            <h3 className='font-semibold text-xl text-center md:text-left'>{item.title}</h3>
+                            <p className='text-center md:text-start'>{item.description}</p>
                         </div>)
                 }
             </div>

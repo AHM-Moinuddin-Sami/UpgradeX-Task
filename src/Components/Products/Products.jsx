@@ -46,7 +46,7 @@ const Products = () => {
 
 
     return (
-        <div className="products px-48 pt-10 pb-40 relative bg-blue-50">
+        <div className="products px-4    md:px-48 md:pt-10 pt-[2vw] pb-[8vw] md:pb-40 relative bg-blue-50">
             <Image
                 alt=''
                 width={500}
@@ -64,7 +64,7 @@ const Products = () => {
             ></Image>
 
             <div className='text-center my-12'>
-                <h3>Products on ZET</h3>
+                <h3 className='text-2xl font-semibold'>Products on ZET</h3>
                 <p>We are trusted by best brand in the country</p>
             </div>
 
@@ -75,7 +75,7 @@ const Products = () => {
                         tiltMaxAngleX={10}
                         tiltMaxAngleY={10}
                     >
-                        <div data-aos='fade-up' className={` p-8 flex items-center ${product.bg} hover:bg-white rounded-xl productCard `}>
+                        <div data-aos='fade-up' className={` p-8 flex flex-col md:flex-row items-center ${product.bg} hover:bg-white rounded-xl productCard `}>
                             <Image
                                 alt=''
                                 width={500}
@@ -84,7 +84,7 @@ const Products = () => {
                                 className=' w-48 h-48 '
                             ></Image>
                             <div className='pl-6'>
-                                <h3 className=' text-xl font-semibold '>{product.title}</h3>
+                                <h3 className=' text-xl text-center md:text-start font-semibold '>{product.title}</h3>
                                 <p>{product.description}</p>
                             </div>
                         </div>

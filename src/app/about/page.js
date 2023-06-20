@@ -1,4 +1,5 @@
 import AboutBanner from "@/Components/AboutBanner/AboutBanner";
+import AboutFooter from "@/Components/AboutFooter/AboutFooter";
 import Featured from "@/Components/Featured/Featured";
 import Founders from "@/Components/Founders/Founders";
 import Growth from "@/Components/Growth/Growth";
@@ -12,6 +13,7 @@ const About = () => {
             <Featured></Featured>
             <Investors></Investors>
             <Founders></Founders>
+            <AboutFooter></AboutFooter>
         </div>
     );
 };

@@ -13,12 +13,12 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>
+      <body className='max-h-full'>
         <NavBar></NavBar>
 
         <div className={inter.className}>{children}</div>
 
-        <Footer></Footer>
+        <Footer></Footer> 
       </body>
     </html>
   )

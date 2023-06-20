@@ -13,10 +13,10 @@ const Banner = () => {
     }, [])
 
     return (
-        <div className=" px-48 py-2" data-aos="fade-up" >
-            <div className=" my-[6vw] flex bg-blue-50 ">
-                <div className="p-[4vw] flex flex-col items-start justify-center">
-                    <h3 className="mb-3 font-bold text-[40px]">Become a Financial Advisor and <span className="text-blue-700">Earn Rs.1 Lakh/Month</span></h3>
+        <div className=" px-4 md:px-48 py-8" data-aos="fade-up" >
+            <div className=" my-[6vw] flex bg-blue-100 ">
+                <div className="p-[4vw] flex flex-col md:items-start items-center justify-center">
+                    <h3 className="mb-3 md:text-left text-center font-bold text-[40px]">Become a Financial Advisor and <span className="text-blue-700">Earn Rs.1 Lakh/Month</span></h3>
                     <p className="mb-4 text-xl">No investment required</p>
                     <a target="_blank" href="https://play.google.com/store/apps/details?id=in.onecode.app">
                         <Image
@@ -24,6 +24,7 @@ const Banner = () => {
                             width={100}
                             height={100}
                             src={"https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"}
+                            className="my-4 w-[160px]"
                         >
                         </Image>
                     </a>    

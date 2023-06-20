@@ -29,9 +29,9 @@ const Founders = () => {
 
     return (
         <div className="bg-blue-50 px-48 pt-[2vw] pb-[8vw]">
-            <div className="text-center">
-                <p>Meet Our Founders</p>
-                <p>Few words from founders desk</p>
+            <div className="text-center my-12">
+                <p className=" text-[40px] font-extrabold ">Meet Our Founders</p>
+                <p className=" mt-3 text-2xl ">Few words from founders desk</p>
             </div>
             <div className="mt-[4vw] gap-[2vw] w-full justify-between grid md:grid-cols-3">
                 {
