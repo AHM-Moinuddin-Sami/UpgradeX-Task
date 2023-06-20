@@ -5,6 +5,10 @@ import Founders from "@/Components/Founders/Founders";
 import Growth from "@/Components/Growth/Growth";
 import Investors from "@/Components/Investors/Investors";
 
+export const metadata = {
+    title: 'ZET - About Us'
+}
+
 const About = () => {
     return (
         <div>
