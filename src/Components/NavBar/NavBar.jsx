@@ -31,7 +31,7 @@ const NavBar = () => {
                     <a href="">Blog</a>
                     <a href=""> <button className="rounded-lg h-8 w-[120%] text-white bg-blue-500">Download ZET</button> </a>
                 </div>
-                <button onClick={() => setDropdownOpen(!dropdownOpen)}>{
+                <button className="md:hidden" onClick={() => setDropdownOpen(!dropdownOpen)}>{
                     dropdownOpen ? <RxCross1></RxCross1> : <GiHamburgerMenu></GiHamburgerMenu>
                 }</button>
 

@@ -1,7 +1,7 @@
 
 const AboutBanner = () => {
     return (
-        <div className="ourMission">
+        <div className="ourMission relative">
             
 
             <div className="text-center absolute top-[30%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] text-white">
