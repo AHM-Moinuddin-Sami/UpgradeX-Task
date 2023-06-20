@@ -36,12 +36,13 @@ const Founders = () => {
             <div className="mt-[4vw] gap-[2vw] w-full justify-between grid md:grid-cols-3">
                 {
                     founders.map((founder, index) => <Tilt
+
                         key={index}
                         tiltMaxAngleX={5}
                         tiltMaxAngleY={5}
                         className="w-fit md:p-8 "
                     >
-                        <div className="duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]">
+                        <div data-aos='fade-up' className="duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]">
                             <Image
                                 alt=""
                                 height={440}
