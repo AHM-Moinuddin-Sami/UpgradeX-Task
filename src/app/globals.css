@@ -68,9 +68,14 @@ footer {
   clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-.ourMission{
+.ourMission {
   background-image: url("/OurMission.webp");
   background-size: cover;
   height: 90vh;
   width: 100%;
 }
+
+/* .investorImg:hover {
+ transition-timing-function: cubic-bezier(0.03, 0.98, 0.52, 0.99);
+ transition-duration: 400ms;
+} */

@@ -1,6 +1,7 @@
 import AboutBanner from "@/Components/AboutBanner/AboutBanner";
 import Featured from "@/Components/Featured/Featured";
 import Growth from "@/Components/Growth/Growth";
+import Investors from "@/Components/Investors/Investors";
 
 const About = () => {
     return (
@@ -8,6 +9,7 @@ const About = () => {
             <AboutBanner></AboutBanner>
             <Growth></Growth>
             <Featured></Featured>
+            <Investors></Investors>
         </div>
     );
 };
