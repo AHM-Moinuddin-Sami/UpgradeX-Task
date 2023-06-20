@@ -64,9 +64,9 @@ const Investors = () => {
     ]
 
     return (
-        <div className="px-48 pt-[2vw] pb-[8vw]">
-            <p className="my-12 text-[40px] font-extrabold">Meet the Investors</p>
-            <div className="flex gap-[2vw] mt-[4vw] justify-between">
+        <div className="md:px-48 px-4 pt-[2vw] pb-[8vw]">
+            <p className="my-12 text-2xl md:text-[40px] font-extrabold">Meet the Investors</p>
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-[2vw] mt-[4vw] justify-between">
                 {
                     companies.map((comapny, index) => <Tilt
                         key={index}
@@ -79,27 +79,27 @@ const Investors = () => {
                             height={220}
                             width={350}
                             src={comapny}
-                            className="p-8 duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]"
+                            className="md:p-8 duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]"
                         ></Image>
                     </Tilt>)
                 }
             </div>
-            <div className="mt-[4vw] grid justify-between md:grid-cols-5 gap-[2vw]">
+            <div className="mt-[4vw] grid grid-cols-3 justify-between md:grid-cols-5 gap-[2vw]">
                 {
                     investors.map((investor, index) => <Tilt
                         key={index}
                         tiltMaxAngleX={5}
                         tiltMaxAngleY={5}
                     >
-                        <div className="p-8 duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]">
+                        <div className="md:p-8 duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]">
                             <Image
                                 alt=""
                                 height={340}
                                 width={400}
                                 src={investor.img}
                             ></Image>
-                            <p className="mt-4 font-medium">{investor.name}</p>
-                            <p>{investor.title}</p>
+                            <p className="mt-4 font-medium md:text-base text-sm">{investor.name}</p>
+                            <p className="md:text-base text-xs">{investor.title}</p>
                         </div>
                     </Tilt>)
                 }

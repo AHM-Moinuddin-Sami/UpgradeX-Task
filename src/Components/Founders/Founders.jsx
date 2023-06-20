@@ -28,10 +28,10 @@ const Founders = () => {
     ]
 
     return (
-        <div className="bg-blue-50 px-48 pt-[2vw] pb-[8vw]">
+        <div className="bg-blue-50 px-4 md:px-48 pt-[2vw] pb-[8vw]">
             <div className="text-center my-12">
-                <p className=" text-[40px] font-extrabold ">Meet Our Founders</p>
-                <p className=" mt-3 text-2xl ">Few words from founders desk</p>
+                <p className=" text-2xl md:text-[40px] font-extrabold ">Meet Our Founders</p>
+                <p className=" mt-3 md:text-2xl ">Few words from founders desk</p>
             </div>
             <div className="mt-[4vw] gap-[2vw] w-full justify-between grid md:grid-cols-3">
                 {
@@ -39,7 +39,7 @@ const Founders = () => {
                         key={index}
                         tiltMaxAngleX={5}
                         tiltMaxAngleY={5}
-                        className="w-fit p-8 "
+                        className="w-fit md:p-8 "
                     >
                         <div className="duration-[200ms] hover:transition-all hover:duration-[200ms] hover:scale-[1.03]">
                             <Image
@@ -48,7 +48,7 @@ const Founders = () => {
                                 width={440}
                                 src={founder.img}
                             ></Image>
-                            <div className="flex mt-4  justify-between items-center text-2xl">
+                            <div className="flex mt-4  md:w-full justify-between items-center md:text-2xl">
                                 <div>
                                     <p>{founder.name}</p>
                                     <p>{founder.title}</p>
