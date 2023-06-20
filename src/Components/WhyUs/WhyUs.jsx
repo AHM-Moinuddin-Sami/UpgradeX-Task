@@ -46,19 +46,19 @@ const WhyUs = () => {
     }, [])
 
     return (
-        <div className='py-[4vw] flex px-48'>
+        <div className='py-[4vw] relative flex px-48'>
             <Image
                 alt=''
                 width={200}
                 height={200}
                 src={"/bgImg.webp"}
-                className='h-[75%] w-[15%] hidden md:block pl-[1.5vw] absolute z-[1]'
+                className='h-[75%] w-[15%] hidden bottom-0 md:block pl-[1.5vw] absolute z-[1]'
             ></Image>
-            <div className='whyus flex flex-col items-center my-12'>
-                <h3 className='text-center'>
-                    Why <span>Choose Us</span>
+            <div className='whyus flex flex-col w-[374px] h-[374px] items-center my-12'>
+                <h3 className='text-center font-semibold text-2xl'>
+                    Why <span className='text-blue-600'>Choose Us</span>
                 </h3>
-                <p className='text-center'>Why we are loved by our customers</p>
+                <p className='text-center font-medium'>Why we are loved by our customers</p>
                 <Image
                     alt=''
                     width={277}

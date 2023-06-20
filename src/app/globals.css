@@ -13,7 +13,7 @@
   }
 }
 
-main{
+main {
   min-width: 0;
 }
 
@@ -59,11 +59,18 @@ footer {
   display: flex;
 }
 
-/* .whyus{
-  background-image: url("/bgImg.webp");
-  background-repeat: no-repeat;
+.steps {
+  clip-path: polygon(0% 27%, 100% 0%, 100% 73%, 0% 100%);
+  background-color: rgb(10, 37, 64);
+}
+
+.stepsTitle {
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.ourMission{
+  background-image: url("/OurMission.webp");
   background-size: cover;
-  width: 15%;
-  height: 75%;
-  padding-left: 1.5vw;
-} */
+  height: 90vh;
+  width: 100%;
+}

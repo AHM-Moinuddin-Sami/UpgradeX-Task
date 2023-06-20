@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
 import { Autoplay } from "swiper";
-import "swiper/css/pagination";
 
 const ZetEffect = () => {
 

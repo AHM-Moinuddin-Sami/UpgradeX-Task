@@ -16,7 +16,7 @@ const NavBar = () => {
             </div>
             <div className="flex gap-8 text-lg items-center">
                 <a href="">Home</a>
-                <a href="">About Us</a>
+                <a href="/about">About Us</a>
                 <a href="">Partner With Us</a>
                 <a href="">Blog</a>
                 <a href=""> <button className="rounded-lg h-8 w-[120%] text-white bg-blue-500">Download ZET</button> </a>

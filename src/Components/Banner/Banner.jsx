@@ -18,17 +18,15 @@ const Banner = () => {
                 <div className="p-[4vw] flex flex-col items-start justify-center">
                     <h3 className="mb-3 font-bold text-[40px]">Become a Financial Advisor and <span className="text-blue-700">Earn Rs.1 Lakh/Month</span></h3>
                     <p className="mb-4 text-xl">No investment required</p>
-                    <button>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=in.onecode.app">
                         <Image
                             alt=""
-                            src={"https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"}
+                            width={100}
                             height={100}
-                            width={200}
-                            className="px-2 py-4 rounded-lg w-32"
+                            src={"https://zetapp.in/_next/static/media/downloadBtnDark.a0f01343.svg"}
                         >
-
                         </Image>
-                    </button>
+                    </a>    
                 </div>
                 <div className="mt-[-3vw] hidden md:block">
                     <Image
